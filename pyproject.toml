@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "elevate-or-backend"
+version = "0.1.0"
+description = ""
+authors = ["Nate Wilson <nsw.wilson@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+uvicorn = "^0.34.0"
+sqlmodel = "^0.0.22"
+alembic = "^1.14.0"
+python-dotenv = "^1.0.1"
+pyjwt = "^2.10.1"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+pydantic-settings = "^2.7.1"
+psycopg2-binary = "^2.9.10"
+loguru = "^0.7.3"
+pydantic = "^2.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
